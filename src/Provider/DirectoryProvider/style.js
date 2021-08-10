@@ -3,6 +3,7 @@ import { WithStyled } from "../../Utils";
 
 const style = () => css`
     position: relative;
+    
     .directoryContainer__overlay {
         position: absolute;
         top : 0;

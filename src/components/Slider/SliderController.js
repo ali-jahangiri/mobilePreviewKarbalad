@@ -6,7 +6,7 @@ const RightSvg = () => <svg stroke="currentColor" fill="none" strokeWidth="2" vi
 const SliderController = ({ sliderConfig , nextHandler , prevHandler }) => {
     return (
         <>
-            <Controller onClick={prevHandler} id='fuck' passedStyle={sliderConfig} >
+            <Controller onClick={prevHandler} passedStyle={sliderConfig} >
                 <LeftSvg />
             </Controller>
             <Controller onClick={nextHandler} style={{ left : "95%" }} passedStyle={sliderConfig} >

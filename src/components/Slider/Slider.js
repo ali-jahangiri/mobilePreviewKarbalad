@@ -107,7 +107,7 @@ const DynamicSlider = ({ data , style }) => {
 
     
     return (
-        <div style={{ position : "relative" }}>
+        <div style={{ position : "relative", margin : "1rem 0"}}>
             {
                 _mockModel.showArrow && <SliderController 
                                             nextHandler={() => sliderRef.current?.slickNext()} 

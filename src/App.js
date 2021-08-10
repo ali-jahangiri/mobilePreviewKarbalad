@@ -7,6 +7,7 @@ import Route from "./Provider/Router/Route";
 import RouterProvider from "./Provider/Router/RouterProvider";
 
 import DynamicSlider from "./components/Slider"
+import NestedGarbageContent from "./components/NestedGarbageContent";
 
 const App = () => {
     
@@ -15,14 +16,14 @@ const App = () => {
             <Route name="home">
                 <HeaderProvider title="Home" />
                 <DirectoryProvider>
-                    <CategoryProvider item={new Array(10).fill('')} />
+                    <CategoryProvider item={new Array(7).fill('')} />
+                    <DynamicSlider />
                 </DirectoryProvider>
             </Route>
             <Route name="nested">
                 <NestedHeaderProvider title="Nested Header" />
                 <DirectoryProvider>
-                    <DynamicSlider />
-                    {/* <p>Dolor non autem autem sint voluptates quod ut necessitatibus voluptas.Id nulla velit ea ea.Voluptas commodi repellat.</p> */}
+                    <NestedGarbageContent />
                 </DirectoryProvider>
             </Route>
         </RouterProvider>

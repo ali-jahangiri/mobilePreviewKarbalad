@@ -6,7 +6,12 @@ const Wrapper = styled.div`
     border-top-left-radius: 15px;
     border-top-right-radius : 15px;
     background-color: white;
+    height: 500px; 
+    overflow-y: scroll;
 
+    &::-webkit-scrollbar {
+        display: none;
+    }
 `
 
 const NegativeDirectory = ({ children }) => <Wrapper>{children}</Wrapper>

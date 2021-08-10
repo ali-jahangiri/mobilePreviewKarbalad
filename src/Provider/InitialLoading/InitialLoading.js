@@ -15,8 +15,8 @@ const InitialLoading = ({ children }) => {
             baseBorderRadius : 5 , 
             headerTitleColor : 'white', 
             ctaTextColor : "white" , 
-            indexHeader : "negative", 
-            nestedHeader : "negative" ,
+            indexHeader : "fullWith", 
+            nestedHeader : "fullWith" ,
             category : "box"
         };
         styleDispatcher(serverStyleObject)

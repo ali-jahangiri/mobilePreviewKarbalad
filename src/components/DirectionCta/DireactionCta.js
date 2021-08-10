@@ -4,7 +4,7 @@ import Wrapper from "./style"
 const DirectionCta = ({ onClick , extendStyle }) => {
     
     return (
-        <Wrapper onClick={onClick}>
+        <Wrapper extendStyle={extendStyle} onClick={onClick}>
             <FiArrowLeft color="white" />
         </Wrapper>
     )

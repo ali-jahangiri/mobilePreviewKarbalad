@@ -18,6 +18,7 @@ const controllerStyle = (_ , { passedStyle }) => css`
     background-color: ${passedStyle.controllerBgColor};
 
     svg {
+        font-size: 1.5rem;
         * {
             color: ${passedStyle.controllerColor};
         }
