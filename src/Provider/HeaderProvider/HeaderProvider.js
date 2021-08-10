@@ -19,7 +19,7 @@ const headerClone = rest => ({
 const HeaderProvider = ({ title , ...reset }) => {
     const { indexHeader } = useStyle();
 
-    return headerClone({ title , ...reset})[indexHeader];
+    return headerClone({ title , ...reset})[indexHeader]
 }
 
 export default HeaderProvider;

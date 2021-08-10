@@ -13,7 +13,7 @@ const InitialLoading = ({ children }) => {
         const serverStyleObject = { 
             primary : "#346751" , 
             baseBorderRadius : 5 , 
-            headerTitleColor : 'white'  , 
+            headerTitleColor : 'white', 
             ctaTextColor : "white" , 
             indexHeader : "negative", 
             nestedHeader : "negative" ,

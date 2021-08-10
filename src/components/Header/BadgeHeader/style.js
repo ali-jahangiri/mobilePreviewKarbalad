@@ -7,7 +7,7 @@ const style = ({ primary , baseBorderRadius }) => css`
     padding : 0 1rem;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     .badgeHeader {
         &__innerContainer {
             background-color: ${generateColor(primary , 2)};

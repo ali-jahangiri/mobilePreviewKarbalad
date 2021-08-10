@@ -14,9 +14,9 @@ const nestedHeaderClone = ({...rest}) => ({
     badge : <BadgeHeader {...rest} />
 })
 
-const NestedHeaderProvider = ({ title , rest }) => {
+const NestedHeaderProvider = ({ title }) => {
     const { nestedHeader } = useStyle();
-    return nestedHeaderClone({ title , ...rest })[nestedHeader]
+    return nestedHeaderClone({ title , isNested : true })[nestedHeader]
 }
 
 

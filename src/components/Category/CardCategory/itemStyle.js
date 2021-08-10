@@ -29,7 +29,7 @@ const style = ({ primary , baseBorderRadius }) => css`
         position: absolute;
         left: -10px;
         transform: rotate(26deg);
-        animation: ${anime} 3s forwards infinite;
+        animation: ${anime} 3s .3s forwards infinite;
     }
 
 `

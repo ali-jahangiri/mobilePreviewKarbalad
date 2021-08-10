@@ -8,6 +8,10 @@ const style = ({ primary , baseBorderRadius }) => css`
     margin-top: 2.5rem;
     border-radius: ${baseBorderRadius}px;
     padding : 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
 `
 
 export default WithStyled(style)

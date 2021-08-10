@@ -6,6 +6,7 @@ const style = ({ primary }) => css`
     background: linear-gradient(180deg , ${primary}, transparent);
     height : 120px;
     padding : 15px;
+    padding-top: 2.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
