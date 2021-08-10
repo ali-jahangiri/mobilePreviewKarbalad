@@ -1,13 +1,14 @@
 import CardCategory from "../../components/Category/CardCategory/CardCategory";
 import useStyle from "../styleProvider";
 
-const categoryClone = (...rest) => ({
-    box : <CardCategory {...rest} />
+const categoryClone = item => ({
+    box : <CardCategory item={item} />
 })
 
 
 const CategoryProvider = ({ item }) => {
-    const { category } = useStyle()
+    const { category } = useStyle();
+    
     return categoryClone(item)[category]
 }
 

@@ -2,6 +2,7 @@ import CardCategoryItem from "./CardCategoryItem";
 import Wrapper from "./style";
 
 const CardCategory = ({ item = [] }) => {
+    
     return (
         <Wrapper>
             {

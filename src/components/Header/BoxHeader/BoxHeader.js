@@ -1,6 +1,7 @@
 import Wrapper from "./style";
 
-const BoxHeader = ({ title }) => {
+const BoxHeader = ({ title , ...rest }) => {
+    console.log(rest);
     return (
         <Wrapper>
             <p>{title}</p>

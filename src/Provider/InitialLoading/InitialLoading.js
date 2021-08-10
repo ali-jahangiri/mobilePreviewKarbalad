@@ -10,7 +10,15 @@ const InitialLoading = ({ children }) => {
 
 
     useEffect(() => {
-        const serverStyleObject = { primary : "#346751" , baseBorderRadius : 5 , headerTitleColor : 'white'  , ctaTextColor : "white" , indexHeader : "badge", nestedHeader : "" , category : "box"};
+        const serverStyleObject = { 
+            primary : "#346751" , 
+            baseBorderRadius : 5 , 
+            headerTitleColor : 'white'  , 
+            ctaTextColor : "white" , 
+            indexHeader : "negative", 
+            nestedHeader : "negative" ,
+            category : "box"
+        };
         styleDispatcher(serverStyleObject)
         setLoading(false)
     } , [])

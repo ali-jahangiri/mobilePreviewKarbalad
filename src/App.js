@@ -1,16 +1,31 @@
 import React from "react";
+import CategoryProvider from "./Provider/CategoryProvider/CategoryProvider.";
 import DirectoryProvider from "./Provider/DirectoryProvider/DirectoryProvider";
 import HeaderProvider from "./Provider/HeaderProvider/HeaderProvider";
+import NestedHeaderProvider from "./Provider/NestedHeaderProvider/NestedHeaderProvider";
+import Route from "./Provider/Router/Route";
+import RouterProvider from "./Provider/Router/RouterProvider";
 
+import DynamicSlider from "./components/Slider"
 
 const App = () => {
+    
     return (
-        <React.Fragment>
-            <HeaderProvider title="Home" />
-            <DirectoryProvider>
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد
-            </DirectoryProvider>
-        </React.Fragment>
+        <RouterProvider initialRoute="home">
+            <Route name="home">
+                <HeaderProvider title="Home" />
+                <DirectoryProvider>
+                    <CategoryProvider item={new Array(10).fill('')} />
+                </DirectoryProvider>
+            </Route>
+            <Route name="nested">
+                <NestedHeaderProvider title="Nested Header" />
+                <DirectoryProvider>
+                    <DynamicSlider />
+                    {/* <p>Dolor non autem autem sint voluptates quod ut necessitatibus voluptas.Id nulla velit ea ea.Voluptas commodi repellat.</p> */}
+                </DirectoryProvider>
+            </Route>
+        </RouterProvider>
     )
 }
 

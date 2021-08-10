@@ -17,7 +17,7 @@ const DirectoryProvider = ({ children }) => {
 
     return (
         <Wrapper>
-            <div className="directoryContainer__overlay"></div>   
+            {/* <div className="directoryContainer__overlay"></div>    */}
             {renderChecker()}
         </Wrapper>
     )
