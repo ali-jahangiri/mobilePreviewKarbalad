@@ -1,5 +1,5 @@
 import { css, keyframes } from "styled-components";
-import { WithStyled } from "../../../Utils";
+import { generateColor, WithStyled } from "../../../Utils";
 
 
 const anime = keyframes`
@@ -13,7 +13,7 @@ const anime = keyframes`
 
 const style = ({ primary , baseBorderRadius } , { _delay }) => css`
     height: 100px;
-    background-color: ${primary};
+    background-color: ${generateColor(primary , 9)};
     margin: 1rem 0;
     border-radius: ${baseBorderRadius}px;
     cursor : pointer;

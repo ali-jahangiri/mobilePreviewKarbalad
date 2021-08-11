@@ -11,15 +11,15 @@ const InitialLoading = ({ children }) => {
 
     useEffect(() => {
         const serverStyleObject = { 
-            primary : "#346751" , 
-            baseBorderRadius : 5 , 
+            primary : "#346751", 
+            baseBorderRadius : 5,
             headerTitleColor : 'white', 
-            ctaTextColor : "white" , 
-            indexHeader : "fullWith", 
-            nestedHeader : "fullWith" ,
-            category : "box"
+            ctaTextColor : "white", 
+            indexHeader : "negative",
+            nestedHeader : "negative",
+            category : "row"
         };
-        styleDispatcher(serverStyleObject)
+        styleDispatcher(serverStyleObject);
         setLoading(false)
     } , [])
 
